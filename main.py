@@ -635,8 +635,8 @@ async def help_button(client, callback_query):
   keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back to Commands", callback_data="cmd_command")]])
   caption = (
         f"👤 𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬\n\n" 
-        f"➥ /add xxxx – Add User ID\n" 
-        f"➥ /remove xxxx – Remove User ID\n"  
+        f"➥ /addauth xxxx – Add User ID\n" 
+        f"➥ /rmauth xxxx – Remove User ID\n"  
         f"➥ /users – Total User List\n"  
         f"➥ /broadcast – For Broadcasting\n"  
         f"➥ /broadusers – All Broadcasting Users\n"  
@@ -1659,7 +1659,7 @@ def reset_and_set_commands():
         {"command": "stop", "description": "🚫 Stop the ongoing process"},
         {"command": "broadcast", "description": "📢 Broadcast to All Users"},
         {"command": "broadusers", "description": "👨‍❤️‍👨 All Broadcasting Users"},
-        {"command": "u", "description": "📑 Upload .txt file"},
+        {"command": "drm", "description": "📑 Upload .txt file"},
         {"command": "cookies", "description": "📁 Upload YT Cookies"},
         {"command": "y2t", "description": "🔪 YouTube → .txt Converter"},
         {"command": "ytm", "description": "🎶 YouTube → .mp3 downloader"},
@@ -1668,8 +1668,8 @@ def reset_and_set_commands():
         {"command": "id", "description": "🆔 Get Your ID"},
         {"command": "info", "description": "ℹ️ Check Your Information"},
         {"command": "logs", "description": "👁️ View Bot Activity"},
-        {"command": "add", "description": "▶️ Add Authorisation"},
-        {"command": "remove", "description": "⏸️ Remove Authorisation "},
+        {"command": "addauth", "description": "▶️ Add Authorisation"},
+        {"command": "rmauth", "description": "⏸️ Remove Authorisation "},
         {"command": "users", "description": "👨‍👨‍👧‍👦 All Premium Users"}
     ]
     requests.post(url, json={"commands": commands})
