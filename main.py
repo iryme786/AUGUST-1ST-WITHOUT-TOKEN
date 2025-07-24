@@ -1659,7 +1659,7 @@ def reset_and_set_commands():
         {"command": "stop", "description": "🚫 Stop the ongoing process"},
         {"command": "broadcast", "description": "📢 Broadcast to All Users"},
         {"command": "broadusers", "description": "👨‍❤️‍👨 All Broadcasting Users"},
-        {"command": "drm", "description": "📑 Upload .txt file"},
+        {"command": "u", "description": "📑 Upload .txt file"},
         {"command": "cookies", "description": "📁 Upload YT Cookies"},
         {"command": "y2t", "description": "🔪 YouTube → .txt Converter"},
         {"command": "ytm", "description": "🎶 YouTube → .mp3 downloader"},
@@ -1668,8 +1668,8 @@ def reset_and_set_commands():
         {"command": "id", "description": "🆔 Get Your ID"},
         {"command": "info", "description": "ℹ️ Check Your Information"},
         {"command": "logs", "description": "👁️ View Bot Activity"},
-        {"command": "addauth", "description": "▶️ Add Authorisation"},
-        {"command": "rmauth", "description": "⏸️ Remove Authorisation "},
+        {"command": "add", "description": "▶️ Add Authorisation"},
+        {"command": "remove", "description": "⏸️ Remove Authorisation "},
         {"command": "users", "description": "👨‍👨‍👧‍👦 All Premium Users"}
     ]
     requests.post(url, json={"commands": commands})
